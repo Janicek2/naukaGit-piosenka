@@ -14,7 +14,6 @@
     "build:sass": "node-sass --output-style compact -o css ./css/style.scss",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass"
-  
   },
   "keywords": [],
   "author": "",
@@ -24,6 +23,7 @@
     "browser-sync": "^2.23.6",
     "globstar": "^1.0.0",
     "node-sass": "^4.9.0",
-    "nu-html-checker": "^0.1.0"
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0"
   }
 }
