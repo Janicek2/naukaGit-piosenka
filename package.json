@@ -9,7 +9,12 @@
     "init-project": "npm install && init:dirs && init:files && init:gitignore",
     "init:dirs": "mkdir sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
-    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:sass": "node-sass --output-style compact -o css ./css/style.scss",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass"
+  
   },
   "keywords": [],
   "author": "",
@@ -18,6 +23,7 @@
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.23.6",
     "globstar": "^1.0.0",
+    "node-sass": "^4.9.0",
     "nu-html-checker": "^0.1.0"
   }
 }
