@@ -2,8 +2,8 @@ $niebieski: blue;
 $pozycja: center;
 
 h1 {
-    text-align: pozycja;
-    background: niebieski;
+    text-align: $pozycja;
+    background: $niebieski;
     color: white;
     width: 100%;
     margin: 0 0;
@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     text-align: pozycja;
-    color: niebieski;
+    color: $niebieski;
     margin: 70px 40px
 }
 
@@ -20,5 +20,13 @@ p {
     line-height: 24px;
     font-size: 50px;
     color: niebieski;
+    background-color: $niebieski;
 }
+
+test {
+    color: black;
+    font-size: 20px;
+    background-color: $niebieski;
+}
+
 
