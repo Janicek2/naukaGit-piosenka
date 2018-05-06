@@ -10,18 +10,19 @@ h1 {
 }
 
 h2 {
-    text-align: pozycja;
+    text-align: $pozycja;
     color: $niebieski;
     margin: 70px 40px
 }
 
 p {
-    text-align: pozycja;
+    text-align: $pozycja;
     line-height: 24px;
-    font-size: 50px;
-    color: niebieski;
+    font-size: 20px;
+    color: white;
     background-color: $niebieski;
 }
+
 
 
 
